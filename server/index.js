@@ -43,7 +43,7 @@ app.get("/api/counter", (req, res) => {
   buttonCount += 1;
 
 
-   res.status(200).send(`You now have ${buttonCount} times, good luck`);
+   res.status(200).send(`You now have ${buttonCount} times, good luck!`);
   
 });
 
