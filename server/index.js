@@ -22,11 +22,14 @@ app.get("/api/compliment", (req, res) => {
   res.status(200).send(randomCompliment);
   
 });
+
+//get and post
+
 app.post("/api/name", (req, res) => {
 
   const { Name } = req.body;
 
-  res.status(200).send(`Hello ${Name}`);
+  res.status(200).send(`Hello ${Name}, you sure are lucky!`);
 });
 
 app.post("/api/number", (req, res) => {
@@ -40,7 +43,7 @@ app.get("/api/counter", (req, res) => {
   buttonCount += 1;
 
 
-   res.status(200).send(`You have pressed the button ${buttonCount} times`);
+   res.status(200).send(`You now have ${buttonCount} times, good luck`);
   
 });
 
